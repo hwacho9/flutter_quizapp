@@ -6,7 +6,14 @@ class StartScreen extends StatelessWidget {
   @override
   Widget build(context) {
     return Container(
-      color: Colors.purple,
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Color.fromARGB(255, 78, 13, 151),
+            Color.fromARGB(255, 132, 63, 211)
+          ],
+        ),
+      ),
       child: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
