@@ -28,15 +28,17 @@ class StartScreen extends StatelessWidget {
               height: 60,
             ),
             const Text("Leart Flutter the fun way!",
-                style: TextStyle(fontSize: 30, color: Colors.white)),
+                style: TextStyle(fontSize: 20, color: Colors.white)),
             const SizedBox(
               height: 20,
             ),
             OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                foregroundColor: Colors.white,
+              ),
               onPressed: () {},
               child: const Text(
                 "Start Quiz",
-                style: TextStyle(fontSize: 20, color: Colors.white),
               ),
             ),
           ],
