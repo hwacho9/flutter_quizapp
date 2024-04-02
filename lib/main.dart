@@ -35,7 +35,9 @@ class MyHomePage extends StatelessWidget {
             Image.asset(
               ('assets/images/quiz-logo.png'),
               width: 200,
-            )
+            ),
+            const Text("Leart Flutter the fun way!",
+                style: TextStyle(fontSize: 20, color: Colors.white)),
           ]),
         ),
       ),
