@@ -5,7 +5,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +19,26 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  Widget build(BuildContext context) {
+    return Scaffold(
+      // appBar: AppBar(
+      //   title: const Text('Flutter Demo'),
+      // ),
+      body: Container(
+        color: Colors.purple,
+        child: Center(
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            Image.asset(
+              ('assets/images/quiz-logo.png'),
+              width: 200,
+            )
+          ]),
+        ),
+      ),
+    );
+  }
 }
